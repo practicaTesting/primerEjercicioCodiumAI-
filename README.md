@@ -1,7 +1,14 @@
-1. Inicializa el proyecto con:
+🧮 Calculadora con CodiumAI
+Este es un mini proyecto de ejemplo donde se implementa una calculadora básica en JavaScript y se generan pruebas automáticas con CodiumAI.
+El objetivo es practicar la integración de pruebas y documentación en proyectos simples.
+
+
+🚀 Instalación y configuración
+Inicializa el proyecto:
 npm init -y
 
-2. En tu package.json debes tener "type": "module" para poder usar import. Ejemplo:
+En tu package.json asegúrate de incluir "type": "module" para poder usar import.
+Ejemplo:
 {
   "name": "calculadora-tests",
   "version": "1.0.0",
@@ -11,21 +18,37 @@ npm init -y
   }
 }
 
-3. Instalar CodiumAI: en el navegador y la extension en Visual Studio Code:
-Una vez instalado, ábrelo y inicia sesión (te pedirá registrarte con GitHub/Google).
-se abrira un chat a mano izquierda y ya puedes pedir lo que necesites.
-
-NOTA: Para ejecutar los test: " node --test ejercicio/calculadora.test.js "
+🔧 Ejecución de pruebas
+node --test ejercicio/calculadora.test.js
 
 
-
-OTRA FORMA: para generar pruebas. con Jest seria:
+🤖 Con Jest (opcional)
+Instalar Jest:
 npm install --save-dev jest
-- Agrega en tu package.json esta línea dentro de "scripts":
+
+Modificar tu package.json:
 "scripts": {
   "test": "jest"
 }
 
-ESTO ES PARA QUE NOS AYUDE A HACER LA DOCUEMNTACION (agregar documentación JSDoc):
-- Selecciona tu función o archivo (ej: calculadora.js).
-- Haz clic derecho → Qodo Gen → Enhance this code.
+🔧 Ejecutar:
+npm test
+
+
+📂 Estructura del proyecto
+📦 calculadora-tests
+ ┣ 📂 ejercicio
+ ┃ ┣ 📜 calculadora.js      # Funciones de la calculadora
+ ┃ ┣ 📜 calculadora.test.js # Pruebas generadas con CodiumAI
+ ┣ 📜 package.json
+ ┣ 📜 README.md
+
+ 
+Selecciona tu función o archivo (ej: calculadora.js).
+Haz clic derecho → Qodo Gen → Enhance this code para:
+Esto genera documentación (JSDoc).
+
+📌 Notas
+Este proyecto es únicamente con fines de práctica.
+CodiumAI ayuda a generar pruebas y documentación automática.
+
