@@ -19,7 +19,7 @@ Ejemplo:
 }
 
 🔧 Ejecución de pruebas
-node --test ejercicio/calculadora.test.js
+node --test calculadora.test.js
 
 
 🤖 Con Jest (opcional)
@@ -37,9 +37,8 @@ npm test
 
 📂 Estructura del proyecto
 📦 calculadora-tests
- ┣ 📂 ejercicio
- ┃ ┣ 📜 calculadora.js      # Funciones de la calculadora
- ┃ ┣ 📜 calculadora.test.js # Pruebas generadas con CodiumAI
+ ┃ 📜 calculadora.js      # Funciones de la calculadora
+ ┃ 📜 calculadora.test.js # Pruebas generadas con CodiumAI
  ┣ 📜 package.json
  ┣ 📜 README.md
 
