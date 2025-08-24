@@ -89,4 +89,4 @@ Ya para genenerar los casos de prueba se le pide a la IA.
 ---
 ## 🚀 Objetivo
 
-El objetivo es **practicar la integración de pruebas en proyectos simples**, aplicando buenas prácticas de calidad.  
+El objetivo es practicar la integración de pruebas y documentación en proyectos simples.
