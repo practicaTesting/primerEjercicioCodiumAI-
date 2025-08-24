@@ -7,7 +7,7 @@ Este es un mini proyecto de ejemplo donde se implementa una **calculadora básic
 ## 📂 Contenido del repositorio  
 
 1. **Calculadora en JavaScript**  
-   - Funciones básicas: suma, resta, multiplicación y división.  
+   - Funciones básicas: **suma, resta, división** (con manejo de error en división por cero).  
 
 2. **Pruebas automatizadas con CodiumAI (Qodo Gen)**  
    - Generación de casos de prueba automáticos para validar operaciones básicas.  
@@ -15,8 +15,12 @@ Este es un mini proyecto de ejemplo donde se implementa una **calculadora básic
      - Suma con valores positivos y negativos.  
      - Resta con cero.  
      - Manejo de decimales y precisión.  
+     - División con error si el divisor es `0`.  
 
-3. **Configuración del entorno de pruebas**  
+3. **Documentación con JSDoc**  
+   - Cada función incluye comentarios con **JSDoc** para describir parámetros, retorno y errores esperados.  
+
+4. **Configuración del entorno de pruebas**  
    - Uso del módulo `node:test` nativo de Node.js.  
    - Configuración opcional para usar Jest como framework de pruebas.  
 
@@ -24,10 +28,10 @@ Este es un mini proyecto de ejemplo donde se implementa una **calculadora básic
 
 ## 📂 Estructura del proyecto
 📦 calculadora-tests
- ┣ 📜 calculadora.js        # Funciones de la calculadora
- ┣ 📜 calculadora.test.js   # Pruebas generadas con CodiumAI (Qodo Gen)
- ┣ 📜 package.json
- ┣ 📜 README.md
+┣ 📜 calculadora.js # Funciones de la calculadora (con JSDoc)
+┣ 📜 calculadora.test.js # Pruebas generadas con CodiumAI (Qodo Gen)
+┣ 📜 package.json
+┣ 📜 README.md
 
 ---
 
@@ -81,10 +85,10 @@ npm test
 ---
 
 ## 🤖 Uso de CodiumAI (Qodo Gen)
-Selecciona tu función o archivo (ej: calculadora.js).
-Haz clic derecho → Qodo Gen → Enhance this code.
-Esto genera automáticamente documentación JSDoc.
-Ya para genenerar los casos de prueba se le pide a la IA.
+1. Selecciona tu función o archivo (ej: calculadora.js).
+2. Haz clic derecho → Qodo Gen → Enhance this code.
+- Esto genera automáticamente documentación JSDoc.
+3. Para generar casos de prueba, se le pide a la IA directamente y los inserta en un archivo de test.
 
 ---
 ## 🚀 Objetivo
