@@ -1,96 +1,143 @@
-# 🧮 Calculadora con CodiumAI  
+## 🧮 Calculadora con CodiumAI  
 
-Este es un mini proyecto de ejemplo donde se implementa una **calculadora básica en JavaScript** y se generan pruebas automatizadas con **CodiumAI (Qodo Gen)**.  
+Mini proyecto desarrollado para practicar **testing automatizado, documentación de código y uso de Inteligencia Artificial como herramienta de apoyo durante el desarrollo.**
+
+El proyecto consiste en una calculadora básica desarrollada en **JavaScript**, acompañada de pruebas automatizadas y documentación **JSDoc** generadas y/o asistidas mediante **CodiumAI (Qodo Gen).**
 
 ---
+## 🎯 Objetivo
 
-## 📂 Contenido del repositorio  
+El objetivo de este proyecto es explorar cómo una herramienta de **Inteligencia Artificial como CodiumAI (Qodo Gen)** puede utilizarse como apoyo en diferentes etapas del desarrollo y testing de software.
 
-1. **Calculadora en JavaScript**  
-   - Funciones básicas: **suma, resta, división** (con manejo de error en división por cero).  
+Para ello, se desarrolló una calculadora con operaciones matemáticas básicas y posteriormente se utilizó Qodo Gen para:
 
-2. **Pruebas automatizadas con CodiumAI (Qodo Gen)**  
-   - Generación de casos de prueba automáticos para validar operaciones básicas.  
-   - Ejemplos incluidos:  
-     - Suma con valores positivos y negativos.  
-     - Resta con cero.  
-     - Manejo de decimales y precisión.  
-     - División con error si el divisor es `0`.  
+- 🤖 **Generar y proponer casos de prueba** para validar el comportamiento de las funciones.
+- 🧪 **Crear pruebas automatizadas** para comprobar diferentes escenarios, incluyendo casos normales y casos límite.
+- 📝 **Generar documentación JSDoc** para describir las funciones, sus parámetros, valores de retorno y posibles errores.
+- 🔍 **Identificar escenarios que deberían ser validados** dentro de las pruebas.
 
-3. **Documentación con JSDoc**  
-   - Cada función incluye comentarios con **JSDoc** para describir parámetros, retorno y errores esperados.  
+Las pruebas generadas fueron revisadas para comprobar que los casos propuestos fueran coherentes con el comportamiento esperado de la aplicación.
 
-4. **Configuración del entorno de pruebas**  
-   - Uso del módulo `node:test` nativo de Node.js.  
-   - Configuración opcional para usar Jest como framework de pruebas.  
+De esta manera, el proyecto busca mostrar cómo la IA puede utilizarse como **herramienta de apoyo para mejorar la cobertura de pruebas y la documentación del código**, sin sustituir la revisión y criterio del desarrollador.
+
+---
+## 🧮 Funcionalidades
+
+La calculadora implementa las siguientes operaciones:
+
+- ➕ **Suma**
+- ➖ **Resta**
+- ✖️ **Multiplicación**
+- ➗ **División**
+- ⚠️ **Manejo de división por cero**
+
+Las funciones cuentan con documentación mediante **JSDoc**.
+
+---
+## 🧪 Pruebas automatizadas
+
+Las pruebas fueron desarrolladas con ayuda de **CodiumAI (Qodo Gen)** y ejecutadas utilizando el módulo nativo node:test de Node.js.
+
+Se contemplan diferentes escenarios, entre ellos:
+
+- Suma con números positivos.
+- Suma con números negativos.
+- Resta utilizando cero.
+- Multiplicación con diferentes valores.
+- Operaciones con números decimales.
+- Validación de resultados esperados.
+- División entre números.
+- Manejo del error al intentar dividir entre 0.
+
+Esto permite comprobar tanto el comportamiento esperado de las funciones como algunos casos límite.
+
+---
+## 📝 Documentación con JSDoc
+
+La documentación de las funciones fue generada con apoyo de **CodiumAI (Qodo Gen)** utilizando comentarios JSDoc.
+
+La documentación permite identificar de forma clara:
+
+- Los parámetros que recibe cada función.
+- El tipo de dato de los parámetros.
+- El valor que retorna.
+- Los posibles errores que puede producir una función.
 
 ---
 
 ## 📂 Estructura del proyecto
 📦 calculadora-tests
-┣ 📜 calculadora.js # Funciones de la calculadora (con JSDoc)
-┣ 📜 calculadora.test.js # Pruebas generadas con CodiumAI (Qodo Gen)
-┣ 📜 package.json
-┣ 📜 README.md
+
+┣ 📜 calculadora.js  # Contiene las funciones de la calculadora y su documentación JSDoc.
+
+┣ 📜 calculadora.test.js  # Contiene las pruebas automatizadas generadas con apoyo de Qodo Gen.
+
+┣ 📜 package.json  # Contiene la configuración y los scripts del proyecto.
+
+┣ 📜 README.md  # Documentación del proyecto.
+
+---
+## ⚙️ Tecnologías y herramientas
+
+- **JavaScript** 	Desarrollo de las funciones de la calculadora.
+- **Node.js**	 Ejecución del proyecto y las pruebas.
+- **node** 	Framework nativo para pruebas automatizadas.
+- **JSDoc**	Documentación de las funciones.
+- **CodiumAI (Qodo Gen)**  Generación asistida de pruebas y documentación.
 
 ---
 
 ## 🚀 Instalación y configuración  
 
-Inicializa el proyecto:  
+**1. Clonar el repositorio**
+- git clone <URL_DEL_REPOSITORIO>
+- cd calculadora-tests
 
-npm init -y
 
---
+**2. Instalar dependencias**
 
-En tu package.json asegúrate de incluir "type": "module" para poder usar import:
+Este proyecto utiliza el módulo nativo node:test, por lo que **no requiere instalar un framework de testing adicional.**
 
-{
-  "name": "calculadora-tests",
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "test": "node --test"
-  }
-}
+Como el  proyecto ya contiene **package.json**, no es necesario ejecutar **npm init**.
 
---
 
-🔧 Ejecución de pruebas
-Con Node.js (módulo node:test):
+**3. Configuración**
 
-node --test calculadora.test.js
+- Puedes ejecutar las pruebas con:
 
---
+  **npm test**
 
-Con Jest (opcional):
-Instalar Jest:
+- También es posible ejecutarlas directamente con:
 
-npm install --save-dev jest
+  **node --test calculadora.test.js**
 
---
-
-Modificar tu package.json:
-
-"scripts": {
-  "test": "jest"
-}
-
--- 
-
-Ejecutar pruebas:
-
-npm test
 
 ---
 
-## 🤖 Uso de CodiumAI (Qodo Gen)
-1. Selecciona tu función o archivo (ej: calculadora.js).
-2. Haz clic derecho → Qodo Gen → Enhance this code.
-- Esto genera automáticamente documentación JSDoc.
-3. Para generar casos de prueba, se le pide a la IA directamente y los inserta en un archivo de test.
+## 📊 Resultado esperado
+
+Al ejecutar las pruebas correctamente, Node.js mostrará el resultado de cada caso y un resumen indicando que las pruebas fueron ejecutadas satisfactoriamente.
+
+El objetivo es verificar que las funciones de la calculadora cumplen con el comportamiento esperado y que los casos de error también son controlados correctamente.
 
 ---
-## 🚀 Objetivo
+## 📚 Aprendizajes
 
-El objetivo es practicar la integración de pruebas y documentación en proyectos simples.
+Con este proyecto se practicaron conceptos relacionados con:
+
+- 🧪 Pruebas automatizadas.
+- 🤖 Uso de IA como apoyo al testing.
+- 📝 Documentación de código con JSDoc.
+- 🔎 Identificación de casos normales y casos límite.
+- ⚙️ Uso del módulo node:test.
+- 📦 Configuración básica de un proyecto Node.js.
+- ✅ Revisión y validación de código generado por IA.
+
+---
+
+## 👩‍💻 Autor
+
+**Marithza Castaño**
+
+Proyecto realizado con fines de aprendizaje y práctica en **Testing, QA y desarrollo de software.**
+
